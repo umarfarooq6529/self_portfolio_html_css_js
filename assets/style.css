@@ -3,6 +3,7 @@
 :root {
     --bg-color: #131316;
     --text-color: #fffc;
+    --light-text: #fff6;
 }
 
 html {
@@ -40,6 +41,10 @@ img {
 
 h1 {
     font-size: 2.5em;
+}
+
+h3 {
+    color: var(--light-text);
 }
 
 section {
@@ -87,7 +92,7 @@ section {
 .section_home_container {
     display: flex;
     gap: 5em;
-    margin: 0 5em;
+    margin: 0 7em;
 }
 
 .section_home_left {
