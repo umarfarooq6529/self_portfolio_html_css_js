@@ -15,17 +15,21 @@ html {
     box-sizing: border-box;
 }
 
-
 body {
     font-family: 'Poppins', sans-serif;
     background-color: var(--bg-color);
     color: var(--text-color);
-    line-height: 1.7em;
+    line-height: 1.9em;
+    letter-spacing: 0.5px;
 }
 
 a {
     color: var(--text-color);
-    text-decoration: none
+    text-decoration: none;
+}
+
+a:hover {
+    color: white;
 }
 
 img {
@@ -34,12 +38,16 @@ img {
     object-fit: cover;
 }
 
+h1 {
+    font-size: 2.5em;
+}
+
 section {
     display: grid;
     place-items: center;
     align-content: center;
     min-height: 100vh;
-    border-top: 1px solid white;
+    /*border-top: 1px solid white;*/
 }
 
 /*fade transition*/
@@ -58,8 +66,8 @@ section {
 .header {
     position: fixed;
     width: 100%;
-    border-bottom: 1px solid white;
-    padding: 2em 3em;
+    /*border-bottom: 1px solid white;*/
+    padding: 2em 5em;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -67,32 +75,34 @@ section {
 
 .navbar_right {
     display: flex;
-    gap: 2em;
+    gap: 2.5em;
 }
 
 .container {
-    border: 1px solid white;
+    /*border: 1px solid white;*/
 }
 
 /*section home*/
 
 .section_home_container {
-    gap: 10em;
     display: flex;
-    margin: 0 10em;
+    gap: 5em;
+    margin: 0 5em;
 }
 
 .section_home_left {
     display: flex;
+    flex-shrink: 1.5;
     flex-direction: column;
     justify-content: center;
     gap: 0.2em;
+    font-size: 1.2em;
 }
 
 .section_home_right {
     border: 1px solid white;
-    width: 50em;
-    height: 22em;
+    width: 45em;
+    height: 25em;
 }
 
 .section_home_right img {
