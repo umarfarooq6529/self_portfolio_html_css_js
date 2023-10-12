@@ -5,36 +5,57 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Self Portfolio</title>
+    <title>UMAR.DEV</title>
+
+    <!--    font awesome-->
+    <script src="https://kit.fontawesome.com/711297a730.js" crossorigin="anonymous"></script>
 
     <!--    stylesheet-->
     <link rel="stylesheet" href="../assets/style.css">
+
     <!--javascript-->
     <script defer src="app.js"></script>
 </head>
 <body>
 <div class="header">
-    <h2>UMAR.DEV</h2>
-    <p>nav 1</p>
+    <div class="navbar_left">
+        <h2><i class="fa-solid fa-code"></i> UMAR.DEV</h2>
+
+    </div>
+    <nav class="navbar_right">
+        <a href="#">HOME</a>
+        <a href="#section_1">EDUCATION</a>
+        <a href="#section_2">SKILLS</a>
+    </nav>
 </div>
 
-<section class="section_main">
-    <div class="container hidden">
-        <h1>This is a header</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi, facilis?</p>
+<section id="section_home">
+    <div class="container hidden section_home_container">
+
+        <div class="section_home_left">
+            <h1 style="font-size: 2.5em; margin-bottom: 0.5em" >UMAR FAROOQ</h1>
+            <h3><span><</span><span>/</span> FRONT END DEV<span>></span></h3>
+            <p>Welcome to my front-end development portfolio! I'm a passionate and dedicated front-end developer with a
+                deep love for creating beautiful, interactive, and user-friendly web experiences. With a strong blend of
+                creativity and technical skills, I bring websites to life and make them shine.</p>
+        </div>
+
+        <div class="section_home_right">
+            <img src="../assets/PROFILE_B&W.JPG" alt="umar farooq">
+        </div>
     </div>
 </section>
 
-<section class="section_1">
-    <div class="container hidden">
+<section id="section_1">
+    <div class="container hidden section_1_container">
         <h1>This is section 1</h1>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A accusantium dolore esse facilis fugit laboriosam
             magni minima, pariatur vitae voluptates.</p>
     </div>
 </section>
 
-<section class="section_2">
-    <div class="container hidden">
+<section id="section_2">
+    <div class="container hidden section_2_container">
         <h1>This is section 2</h1>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A accusantium dolore esse facilis fugit laboriosam
             magni minima, pariatur vitae voluptates.</p>
