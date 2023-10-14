@@ -17,7 +17,7 @@ html {
 }
 
 body {
-    /*overflow: hidden;*/
+    overflow: hidden;
     font-family: 'Poppins', sans-serif;
     background-color: var(--bg-color);
     color: var(--text-color);
@@ -82,13 +82,19 @@ section {
 
 .navbar_right {
     display: flex;
-    gap: 2.5em;
+    gap: 3em;
 }
 
 .container {
     font-size: 1.1em;
     margin: 0 7em;
 
+}
+
+.navbar_icons {
+    margin-left: 3.5em;
+    display: flex;
+    gap: 1.5em;
 }
 
 /*section home*/
@@ -108,7 +114,7 @@ section {
 
 .section_home_right {
     border: 1px solid white;
-    width: 42em;
+    width: 38em;
     height: 25em;
 }
 
@@ -142,9 +148,9 @@ section {
 .section_1_header {
     display: flex;
     flex-direction: column;
-    gap: 1em;
+    gap: 0.6em;
     text-align: center;
-    padding: 0 25em;
+    padding: 0 20em;
 }
 
 .skills_container {
