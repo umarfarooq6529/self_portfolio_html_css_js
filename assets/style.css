@@ -22,7 +22,7 @@ body {
     background-color: var(--bg-color);
     color: var(--text-color);
     line-height: 1.9em;
-    letter-spacing: 0.5px;
+    letter-spacing: 0.7px;
 }
 
 a {
@@ -148,7 +148,7 @@ section {
 .section_1_header {
     display: flex;
     flex-direction: column;
-    gap: 0.6em;
+    gap: 1em;
     text-align: center;
     padding: 0 20em;
 }
@@ -156,7 +156,7 @@ section {
 .skills_container {
     display: flex;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 15px;
 }
 
 .skills_object {
