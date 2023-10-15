@@ -4,6 +4,9 @@
     --bg-color: #131316;
     --text-color: #fffc;
     --light-text: #fff6;
+    --purple: rgb(123, 31, 162);
+    --violet: rgb(103, 58, 183);
+    --pink: rgb(244, 143, 177);
 }
 
 html {
@@ -126,6 +129,33 @@ section {
     gap: 5em;
 }
 
+/*magic gradient effect*/
+
+.magic {
+    animation: background-pan 2s linear infinite;
+    background: linear-gradient(
+            to right,
+            var(--purple),
+            var(--violet),
+            var(--pink),
+            var(--purple)
+    );
+    background-size: 200%;
+    white-space: nowrap;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+@keyframes background-pan {
+    from {
+        background-position: 0% center;
+    }
+
+    to {
+        background-position: -200% center;
+    }
+}
+
 .section_home_left {
     display: flex;
     flex-shrink: 1.5;
@@ -167,7 +197,7 @@ section {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 6em;
+    gap: 5em;
 }
 
 .section_1_header {

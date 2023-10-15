@@ -28,7 +28,7 @@ const section_1 = new IntersectionObserver((entries) => {
 slideElements.forEach((el) => section_1.observe(el));
 
 // navbar hover Effect
-const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+const letters = "abcdefghijklmnopqrstuvwxyz";
 
 document.querySelector(".hoverEffect").onmouseover = event => {
     let iterations = 0;
