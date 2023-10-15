@@ -40,7 +40,7 @@ document.querySelector(".hoverEffect").onmouseover = event => {
             return letters[Math.floor(Math.random() * 26)]
         }).join("");
 
-        if (iterations >= 11) clearInterval(interval);
+        if (iterations >= 20) clearInterval(interval);
         iterations += 1 / 2;
 
     }, 30)
