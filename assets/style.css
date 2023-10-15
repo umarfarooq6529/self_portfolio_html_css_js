@@ -167,13 +167,13 @@ section {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 5em;
+    gap: 6em;
 }
 
 .section_1_header {
     display: flex;
     flex-direction: column;
-    gap: 0.7em;
+    gap: 1em;
     text-align: center;
     padding: 0 20em;
 }
