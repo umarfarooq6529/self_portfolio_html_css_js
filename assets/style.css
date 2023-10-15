@@ -3,7 +3,7 @@
 :root {
     --bg-color: #131316;
     --text-color: #fffc;
-    --light-text: #fff7;
+    --light-text: #fff6;
 }
 
 html {
@@ -42,11 +42,33 @@ img {
 }
 
 h1 {
-    font-size: 2.4em;
+    width: fit-content;
+    font-size: clamp(0.9em, 1.5vw, 1.5em);
+}
+
+h2 {
+    width: fit-content;
+    font-size: clamp(1.2em, 3vw, 2.7em);
 }
 
 h3 {
+    font-size: clamp(1em, 2.2vw, 2.2em);
+}
+
+h4 {
+    width: fit-content;
+    font-size: clamp(0.9em, 1.55vw, 1.6em);
+}
+
+h5 {
+    width: fit-content;
+    font-size: clamp(0.7em, 1.2vw, 1.2em);
     color: var(--light-text);
+}
+
+p {
+    width: fit-content;
+    font-size: clamp(0.6em, 1.15vw, 1.1em);
 }
 
 section {
@@ -87,7 +109,6 @@ section {
 }
 
 .container {
-    font-size: 1.1em;
     margin: 0 7em;
 
 }
@@ -111,12 +132,16 @@ section {
     flex-direction: column;
     justify-content: center;
     gap: 0.2em;
+
+    > h5 {
+        font-size: clamp(0.7em, 1.4vw, 1.4em);
+    }
 }
 
 .section_home_right {
     border: 1px solid white;
-    width: 38em;
-    height: 25em;
+    max-width: 20em;
+    max-height: 25em;
 
     > img {
         margin-top: 0.8em;
@@ -135,7 +160,7 @@ section {
 }
 
 .section_1_left {
-    flex-shrink: 1.4;
+    flex-shrink: 1.5;
 }
 
 #section_1 {
@@ -148,7 +173,7 @@ section {
 .section_1_header {
     display: flex;
     flex-direction: column;
-    gap: 1em;
+    gap: 0.7em;
     text-align: center;
     padding: 0 20em;
 }
@@ -160,10 +185,10 @@ section {
 }
 
 .skills_object {
-    font-size: 0.85em;
     background-color: #fff2;
-    padding: 12px 25px;
+    padding: 8px 17px;
     border-radius: 5px;
+    font-size: clamp(0.6em, 0.9vw, 1em);
 }
 
 .slide_on {
