@@ -28,11 +28,12 @@ body {
 a {
     color: var(--text-color);
     text-decoration: none;
+
+    > :hover {
+        color: white;
+    }
 }
 
-a:hover {
-    color: white;
-}
 
 img {
     width: 100%;
@@ -116,11 +117,11 @@ section {
     border: 1px solid white;
     width: 38em;
     height: 25em;
-}
 
-.section_home_right img {
-    margin-top: 0.8em;
-    margin-left: 0.8em;
+    > img {
+        margin-top: 0.8em;
+        margin-left: 0.8em;
+    }
 }
 
 /*section_1*/
@@ -131,11 +132,10 @@ section {
     filter: blur(5px);
     transform: translateX(-100%);
     transition: 1s
-
 }
 
 .section_1_left {
-    flex-shrink: 1.5;
+    flex-shrink: 1.4;
 }
 
 #section_1 {
@@ -160,10 +160,10 @@ section {
 }
 
 .skills_object {
-    font-size: 0.8em;
+    font-size: 0.85em;
     background-color: #fff2;
-    padding: 8px 17px;
-    border-radius: 7px;
+    padding: 12px 25px;
+    border-radius: 5px;
 }
 
 .slide_on {
