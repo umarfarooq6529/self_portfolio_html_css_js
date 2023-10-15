@@ -26,3 +26,23 @@ const section_1 = new IntersectionObserver((entries) => {
 });
 
 slideElements.forEach((el) => section_1.observe(el));
+
+// navbar hover Effect
+const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+
+document.querySelector(".hoverEffect").onmouseover = event => {
+    let iterations = 0;
+
+    const interval = setInterval(() => {
+        event.target.innerText = event.target.innerText.split("").map((letter, index) => {
+            if (index < iterations)  return event.target.dataset.value[index];
+
+            return letters[Math.floor(Math.random() * 26)]
+        }).join("");
+
+        if (iterations >= 11) clearInterval(interval);
+        iterations += 1 / 2;
+
+    }, 30)
+
+}
