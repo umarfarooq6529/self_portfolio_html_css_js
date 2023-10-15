@@ -99,11 +99,13 @@ section {
 .header {
     position: fixed;
     width: 100%;
+    z-index: 2;
     /*border-bottom: 1px solid white;*/
     padding: 2em 5em;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    font-size: clamp(0.4em, 1vw, 1em);
 }
 
 .navbar_right {
@@ -117,7 +119,7 @@ section {
 }
 
 .navbar_icons {
-    margin-left: 3.5em;
+    margin-left: 4.5em;
     display: flex;
     gap: 1.5em;
 }
@@ -184,13 +186,25 @@ section {
 .section_1_container {
     display: flex;
     justify-content: space-between;
-    filter: blur(5px);
-    transform: translateX(-100%);
-    transition: 1s
+
+
 }
 
 .section_1_left {
     flex-shrink: 1.5;
+}
+
+.section_1_right {
+    padding-left: 5em
+
+}
+
+.slide {
+    transform: translateX(150%);
+}
+
+.slide_on {
+    transform: translateX(0);
 }
 
 #section_1 {
@@ -203,7 +217,7 @@ section {
 .section_1_header {
     display: flex;
     flex-direction: column;
-    gap: 1em;
+    gap: 0.7em;
     text-align: center;
     padding: 0 20em;
 }
@@ -215,13 +229,10 @@ section {
 }
 
 .skills_object {
+    transition: 1s;
+
     background-color: #fff2;
     padding: 8px 17px;
     border-radius: 5px;
     font-size: clamp(0.6em, 0.9vw, 1em);
-}
-
-.slide_on {
-    filter: blur(0);
-    transform: translateX(0);
 }
