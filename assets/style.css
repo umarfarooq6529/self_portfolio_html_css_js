@@ -46,7 +46,7 @@ img {
 
 h1 {
     width: fit-content;
-    font-size: clamp(0.9em, 1.5vw, 1.5em);
+    font-size: clamp(1.5em, 1.5vw, 1.5em);
 }
 
 h2 {
@@ -60,12 +60,12 @@ h3 {
 
 h4 {
     width: fit-content;
-    font-size: clamp(0.9em, 1.55vw, 1.6em);
+    font-size: clamp(0.8em, 1.55vw, 1.6em);
 }
 
 h5 {
     width: fit-content;
-    font-size: clamp(0.7em, 1.2vw, 1.2em);
+    font-size: clamp(0.6em, 1.2vw, 1.2em);
     color: var(--light-text);
 }
 
@@ -77,7 +77,7 @@ p {
 section {
     display: grid;
     place-items: center;
-    text-align: left;
+    text-align: justify;
     align-content: center;
     min-height: 100vh;
     background: radial-gradient(circle at 50% 50%, rgba(13, 13, 16, 0.9), rgba(13, 13, 16, 0.9)),
@@ -103,7 +103,7 @@ section {
     width: 100%;
     z-index: 2;
     /*border-bottom: 1px solid white;*/
-    padding: 2em 5em;
+    padding: 1.5em 5em;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -116,7 +116,7 @@ section {
 }
 
 .container {
-    margin: 0 7em;
+    margin: 0 7vw;
 }
 
 .navbar_icons {
@@ -127,11 +127,9 @@ section {
 
 /*section home*/
 
-
-
 .section_home_container {
     display: flex;
-    gap: 5em;
+    gap: 5vw;
 }
 
 /*magic gradient effect*/
@@ -189,8 +187,6 @@ section {
 .section_1_container {
     display: flex;
     justify-content: space-between;
-
-
 }
 
 .section_1_left {
@@ -214,7 +210,7 @@ section {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 5em;
+    gap: 12vh;
 }
 
 .section_1_header {
@@ -222,19 +218,58 @@ section {
     flex-direction: column;
     gap: 0.7em;
     text-align: center;
-    padding: 0 20em;
+    padding: 0 20vw;
 }
 
 .skills_container {
     display: flex;
     flex-wrap: wrap;
-    gap: 15px;
+    gap: 1vw;
 }
 
 .skills_object {
     transition: 1s;
     background-color: #fff2;
-    padding: 8px 17px;
+    padding: 1em 1.2vw;
     border-radius: 5px;
-    font-size: clamp(0.6em, 0.9vw, 1em);
+    font-size: clamp(0.4em, 0.9vw, 1em);
 }
+
+/*media queries*/
+
+@media only screen and (max-width: 1000px) {
+    /*section_home*/
+    body {
+        line-height: 1.5;
+    }
+
+
+    /*section_1*/
+    .section_1_header {
+        padding: 0 5vw;
+    }
+
+    #section_1 {
+        gap: 8vh;
+    }
+
+    .section_1_container {
+        flex-direction: column;
+    }
+
+    .section_1_left, .section_1_right {
+        padding-bottom: 2em;
+        padding-left: 0;
+    }
+
+
+}
+
+@media only screen and (max-width: 450px) {
+    .section_home_right {
+        margin-top: 3em;
+        max-height: 15em;
+    }
+}
+
+/*this is new branch*/
